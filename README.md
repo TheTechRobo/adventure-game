@@ -1,2 +1,3 @@
 # adventure-game
 An adventure game I am creating...
+But I can't work on it for long because people are being selfish
