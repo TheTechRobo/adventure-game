@@ -1,5 +1,6 @@
 # I am coding blindly (#lazy) so it may not work
 crowbar = True
+lightOn = False
 def room1():
     print("You are in a room, with a Python Software Foundation poster. There is no visible escape other than a small barred window.")
     if crowbarExists == True:
@@ -24,8 +25,23 @@ elif "take" in whatToDo and whatToDo != "take": #It SHOULD in theroy see if it i
 elif whatToDo.lower() in "pull window":
     if windowExists == True:
         print("You cannot pull that.")
-elif whatToDo.lower() in "pull bars":
-        print("You cannot pull that. Maybe if you had a tool...")
+elif whatToDo.lower() in "pull bars":if crowbarTaken == True:
+    print("You cannot pull that. Maybe if you had a tool...")elif lightOn == True:
 elif whatToDo.lower() in "yeet crowbar":
-    if crowbarExists == True:
+    if crowbarTaken == True:
         print("You throw the crowbar across the room. But it just bounces back.")
+elif whatToDo.lower() in "pry bars":
+    if crowbarTaken == True:
+        print("You pry the bars, but they look like they aren't going to budge. There however is an LED on the bars.")
+    elif lightOn == True:
+        print("The bars bend and you can get out!!")
+elif whatToDo.lower() in "look poster":
+    print("You look closer, and it looks like there is a small lock.")
+elif whatToDo.lower() in "pick lock":
+    if crowbarTaken == True:
+        print("You use the crowbar to pick the lock, and a light turns on.")
+        lightOn == True
+    else:
+        print("You try to use your fingernails but the lock wont budge.")
+elif whatToDo.lower() in "look":
+    print("You are in a room, with a PSF poster. \n There is a light on the bars!!")
