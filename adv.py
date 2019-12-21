@@ -4,8 +4,7 @@ lightOn = False
 able2GetOut = False
 def room1():
     print("You are in a room, with a Python Software Foundation poster. There is no visible escape other than a small barred window.")
-    if crowbarExists == True:
-        print("There is a crowbar.")
+    print("There is a crowbar.")
     windowExists = True
     crowbarExists = True
 room1()
@@ -21,7 +20,7 @@ if whatToDo.lower() in "take crowbar":
         print("I don't see that here.")
 elif whatToDo.lower() in "take":
     print("You must supply an object.")
-elif "take" in whatToDo and whatToDo != "take": #It SHOULD in theroy see if it is `take' with another word (if there is take but the input is not exactly take
+elif "take" in whatToDo and whatToDo != "take": #It SHOULD in theroy see if it is `take' with another word (if there is take but the input is not exactly take)
     print("I don't see that here...")
 elif whatToDo.lower() in "pull window":
     if windowExists == True:
@@ -32,7 +31,7 @@ elif whatToDo.lower() in "yeet crowbar":
     if crowbarTaken == True:
         print("You throw the crowbar across the room. But it just bounces back.")
 elif whatToDo.lower() in "pry bars":
-    if crowbarTaken == True:
+    if lightOn == False:
         print("You pry the bars, but they look like they aren't going to budge. There however is an LED on the bars.")
     elif lightOn == True:
         print("The bars bend and you can get out!!")
@@ -41,9 +40,16 @@ elif whatToDo.lower() in "look poster":
     print("You look closer, and it looks like there is a small lock.")
 elif whatToDo.lower() in "pick lock":
     if crowbarTaken == True:
-        print("You use the crowbar to pick the lock, and a light turns on.")
-        lightOn == True
+        print("You use the crowbar to pick the lock.\n Something lights up.")
+        lightOn = True
     else:
         print("You try to use your fingernails but the lock wont budge.")
 elif whatToDo.lower() in "look":
-    print("You are in a room, with a PSF poster. \n There is a light on the bars!!")
+    if lightOn == True:
+        print("You are in a room, with a PSF poster. \n There is a light on the bars!!")
+    else:
+        print("You are in a room, with a PSF poster. \n Didn't I already say this?")
+elif whatToDo.lower() in "crawl"
+    if able2GetOut == True:
+        print("You crawl out and now are out of that room!... But...")
+        exec(".room2.py")
