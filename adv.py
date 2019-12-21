@@ -49,7 +49,7 @@ elif whatToDo.lower() in "look":
         print("You are in a room, with a PSF poster. \n There is a light on the bars!!")
     else:
         print("You are in a room, with a PSF poster. \n Didn't I already say this?")
-elif whatToDo.lower() in "crawl"
+elif whatToDo.lower() in "crawl":
     if able2GetOut == True:
         print("You crawl out and now are out of that room!... But...")
         exec(".room2.py")
