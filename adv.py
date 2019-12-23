@@ -20,8 +20,7 @@ while True:
     elif "take" in whatToDo.lower() and whatToDo != "take": #It SHOULD in theroy see if it is `take' with another word (if there is take but the input is not exactly take)
         print("I don't see that here...")
     elif whatToDo.lower() in "pull window":
-        if windowExists == True:
-            print("You cannot pull that.")
+        print("You cannot pull that.")
     elif whatToDo.lower() in "pull bars":
         print("You cannot pull that. Maybe if you had a tool...")
     elif whatToDo.lower() in "yeet crowbar":
