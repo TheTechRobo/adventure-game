@@ -1,4 +1,3 @@
-# I am coding blindly (#lazy) so it may not work
 crowbar = True
 lightOn = False
 able2GetOut = False
@@ -14,8 +13,8 @@ if whatToDo.lower() == "take crowbar":
         crowbarTaken = True
         crowbarExists = False
     elif crowbarExists == False:
-        print("You have already taken 
-        print("I don't see that here.")that!")
+        print("You have already taken that!")
+        print("I don't see that here.")
     else:
 elif whatToDo.lower() == "take":
     print("You must supply an object.")
