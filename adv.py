@@ -5,11 +5,10 @@ able2GetOut = False
 def room1():
     print("You are in a room, with a Python Software Foundation poster. There is no visible escape other than a small barred window.")
     print("There is a crowbar.")
-    windowExists = True
-    crowbarExists = True
+crowbarExists = True
 room1()
 whatToDo = input(">")
-if whatToDo.lower() in "take crowbar":
+if whatToDo.lower() == "take crowbar":
     if crowbarExists == True:
         print("Taken.")
         crowbarTaken = True
@@ -18,9 +17,9 @@ if whatToDo.lower() in "take crowbar":
         print("You have already taken that!")
     else:
         print("I don't see that here.")
-elif whatToDo.lower() in "take":
+elif whatToDo.lower() == "take":
     print("You must supply an object.")
-elif "take" in whatToDo and whatToDo != "take": #It SHOULD in theroy see if it is `take' with another word (if there is take but the input is not exactly take)
+elif "take" in whatToDo.lower() and whatToDo != "take": #It SHOULD in theroy see if it is `take' with another word (if there is take but the input is not exactly take)
     print("I don't see that here...")
 elif whatToDo.lower() in "pull window":
     if windowExists == True:
