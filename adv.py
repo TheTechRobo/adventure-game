@@ -36,7 +36,7 @@ elif whatToDo.lower() in "pry bars":
     elif lightOn == True:
         print("The bars bend and you can get out!!")
         able2GetOut = True
-elif whatToDo.lower() in "look poster":
+elif whatToDo.lower() == "look poster":
     print("You look closer, and it looks like there is a small lock.")
 elif whatToDo.lower() in "pick lock":
     if crowbarTaken == True:
