@@ -15,9 +15,8 @@ if whatToDo.lower() == "take crowbar":
     elif crowbarExists == False:
         print("You have already taken that!")
         print("I don't see that here.")
-    else:
-elif whatToDo.lower() == "take":
-    print("You must supply an object.")
+    elif whatToDo.lower() == "take":
+        print("You must supply an object.")
 elif "take" in whatToDo.lower() and whatToDo != "take": #It SHOULD in theroy see if it is `take' with another word (if there is take but the input is not exactly take)
     print("I don't see that here...")
 elif whatToDo.lower() in "pull window":
