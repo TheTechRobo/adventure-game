@@ -48,4 +48,4 @@ while True:
     elif whatToDo.lower() in "crawl":
         if able2GetOut == True:
             print("You crawl out and now are out of that room!... But...")
-            exec(".room2.py")
+            exec("room2.py")
