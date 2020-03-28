@@ -48,4 +48,5 @@ while True:
     elif whatToDo.lower() in "crawl":
         if able2GetOut == True:
             print("You crawl out and now are out of that room!... But...")
+            print("SyntaxError: unfinished program, check back later") #delete when room2 finished
             exec("room2.py")
