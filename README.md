@@ -1,4 +1,4 @@
-# adventure-game
+# adventure-game [![CodeFactor Quality Grade](https://www.codefactor.io/repository/github/thetechrobo/adventure-game/badge/master)](https://www.codefactor.io/repository/github/thetechrobo/adventure-game/overview/master)
 An adventure game I am creating...
 Inspired by Dunnet
 
