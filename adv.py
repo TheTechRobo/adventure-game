@@ -25,7 +25,7 @@ while True:
     elif whatToDo.lower() in "pull bars":
         print("You cannot pull that. Maybe if you had a tool...")
     elif whatToDo.lower() in "yeet crowbar":
-        if crowbarTaken == True:
+        if crowbarTaken is True:
             print("You throw the crowbar across the room. But it just bounces back.")
     elif whatToDo.lower() in "pry bars":
         if lightOn is False:
@@ -47,7 +47,7 @@ while True:
         else:
             print("You are in a room, with a PSF poster. \nDidn't I already say this?")
     elif whatToDo.lower() in "crawl":
-        if able2GetOut == True:
+        if able2GetOut is True:
             print("You crawl out and now are out of that room!... But...")
             print("SyntaxError: unfinished program, check back later") #delete when room2 finished
             runpy.run_path(path_name="room2.py")
