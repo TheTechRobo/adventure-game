@@ -1,4 +1,6 @@
-print("You are in a new room. There is a piece of paper here.")
+print("You are in a new room. There is a piece of paper here. Would you like to read it y/n? ")
+hi = input("Type: ")
+hi = hi.lower()
 def readPaper():
   print('''The paper reads:
   "Hello Manakivo, 
@@ -7,3 +9,6 @@ def readPaper():
   The ink is smudged here. After the smudge, it reads:
   "I hope that this letter finds you. I cannot escape. I cannot escape."
   ''')
+if hi == "y":
+    readPaper()
+print("Work In Progress. this is Unfinished.")
